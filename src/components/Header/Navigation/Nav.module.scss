@@ -1,0 +1,21 @@
+.Nav {
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        &.active {
+          color: #f965c2;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

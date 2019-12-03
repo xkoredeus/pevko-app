@@ -43,7 +43,7 @@ const Logo = props => (
                 </svg>
             </div>
         </div>
-        <div className={classes['bottle__text']}>Приложуха с певком</div>
+        <div className={classes['bottle__text']}>Певко</div>
     </div>
 )
 

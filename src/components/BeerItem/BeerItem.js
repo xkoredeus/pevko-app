@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './BeerItem.module.scss'
+import {NavLink} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { Button } from 'reactstrap'
@@ -17,7 +18,10 @@ const BeerItem = props => {
                     В любимое
                     <FontAwesomeIcon icon={faHeart} className="ml-2"/>
                 </Button>
-                <Button color="info" className="w-50 mt-2">В карточку</Button>
+
+                <NavLink to={'/beer-list/' + props.beer.id} className="d-block w-50 mt-2">
+                    <Button color="info" className="w-100">Подробнее</Button>
+                </NavLink>
             </div>
         </div>
     )

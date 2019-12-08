@@ -20,7 +20,7 @@ class BeerList extends Component {
                 <BeerItem
                     key={id}
                     beer={beer}
-                    name={beer.namee}
+                    // name={beer.name}
                 />
             )
         })

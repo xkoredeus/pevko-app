@@ -3,7 +3,7 @@ import classes from './Nav.module.scss'
 import {NavLink} from 'react-router-dom'
 
 const links = [
-    {to: '/', label: 'Всё певко', exact: true},
+    {to: '/beer-list', label: 'Всё певко', exact: true},
     {to: '/fav-list', label: 'Любимое певко', exact: false},
 ]
 
